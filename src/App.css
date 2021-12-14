@@ -1,38 +1,39 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Karla:wght@300&family=PT+Serif&family=Rubik:wght@300&family=Titillium+Web:wght@200&display=swap');
+body{
+  margin: 0;
+  background-color: #4f6085;
+  font-family: 'Ubuntu', sans-serif;
+}
+.heading{
+  margin: 1rem 0rem;
   text-align: center;
+  width: 100%;
+  background-color: #8ea0d8;
+  padding: 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-cards{
   display: flex;
   flex-direction: column;
+  margin:  auto 1rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content:space-between;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1065px){
+  .main-cards{
+    display: flex;
+    flex-direction: column;
+    margin:  0rem;
+    flex-wrap: wrap;
+    justify-content:center;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 295px){
+  .main-cards{
+    display: flex;
+    flex-direction: column;
+    margin:  0rem;
+    flex-wrap: wrap;
+    justify-content:center;
   }
 }
